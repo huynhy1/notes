@@ -22,5 +22,5 @@ export const main = Util.handler(async (event) => {
   }
 
   // Return the retrieved item
-  return JSON.stringify(params.Item);
+  return JSON.stringify(result.Item);
 });
