@@ -17,8 +17,5 @@ export const main = Util.handler(async (event) => {
 
   const result = await dynamoDb.send(new DeleteCommand(params));
 
-  return JSON.stringify({ 
-    result: result,
-    status: true
-  });
+  return JSON.stringify({ status: true });
 });
