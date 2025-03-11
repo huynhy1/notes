@@ -12,7 +12,6 @@ export default $config({
   async run() {
     await import("./infra/storage");
     await import("./infra/api");
-
     const auth = await import("./infra/auth");
 
     return {
@@ -21,6 +20,5 @@ export default $config({
       IdentityPool: auth.identityPool.id,
       UserPoolClient: auth.userPoolClient.id,
     };
-
   },
 });
